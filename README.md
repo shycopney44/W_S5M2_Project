@@ -59,7 +59,7 @@ Awesome! If you look inside the `frontend` folder you will see it contains, amon
 
 Let's discuss `index.js` and the tasks you need to complete inside that script. **You are not allowed to modify any other files.**
 
-Have fun, and reach out to Staff if you get too stuck!
+Have fun, and check out the Solution Video for this project if you get too stuck!
 
 #### 👉 TASK 1 - Understand the existing code
 
@@ -196,6 +196,13 @@ It would be a nice touch to move the focus of the window to the Restart button u
 </details>
 
 ## FAQ
+
+<details>
+  <summary>I feel very stuck. What can I do?</summary>
+
+Check out the Solution Video for this project in your learning platform. In it, an industry expert will walk yoy through their thinking in detail while they solve the tasks. The Solution Videos are highly recommended even if you are not stuck: you will learn lots of tricks.
+
+</details>
 
 <details>
   <summary>Are there automated tests in this project?</summary>
