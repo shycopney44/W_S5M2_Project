@@ -200,7 +200,7 @@ It would be a nice touch to move the focus of the window to the Restart button u
 <details>
   <summary>I feel very stuck. What can I do?</summary>
 
-Check out the Solution Video for this project in your learning platform. In it, an industry expert will walk yoy through their thinking in detail while they solve the tasks. The Solution Videos are highly recommended even if you are not stuck: you will learn lots of tricks.
+Check out the Solution Video for this project in your learning platform. In it, an industry expert will walk you through their thinking in detail while they solve the tasks. The Solution Videos are highly recommended even if you are not stuck: you will learn lots of tricks.
 
 </details>
 
