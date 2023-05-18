@@ -282,6 +282,21 @@ The `package.json` file contains meta-information about the project like its ver
 </details>
 
 <details>
+  <summary>What is the "start" script in the package.json doing? It looks confusing.</summary>
+
+Give ChatGPT the following input for a detailed breakdown:
+
+```txt
+Hello, I'm looking at a JavaScript project on GitHub, and inside the package.json file I am seeing the following "script":
+
+"start": "fkill :3003 -s && node ./backend/server.js"
+
+Can you explain in detail, but with simple terms, to an audience of inexperienced web developers, what the "start" script is doing?
+```
+
+</details>
+
+<details>
   <summary>What is the .eslintrc.js file?</summary>
 
 This file works in combination with the Eslint extension for VSCode to highlight syntax errors and problems in your code. By editing this file you can customize your linting rules.
