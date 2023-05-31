@@ -68,10 +68,6 @@ function moduleProject2() {
   })
 
   document.addEventListener('keydown', evt => {
-    // 👉 TASK 2 - Use a click handler to target a square 👈
-    // 👉 TASK 2 - Use a click handler to target a square 👈
-    // 👉 TASK 2 - Use a click handler to target a square 👈
-
     // 👉 TASK 3 - Use the arrow keys to highlight a new square 👈
     // 👉 TASK 3 - Use the arrow keys to highlight a new square 👈
     // 👉 TASK 3 - Use the arrow keys to highlight a new square 👈
@@ -87,8 +83,8 @@ function moduleProject2() {
   // 👆 WORK WORK ABOVE THIS LINE 👆
 }
 
-// ❗ DO NOT WORK BELOW THIS LINE
-// ❗ DO NOT WORK BELOW THIS LINE
-// ❗ DO NOT WORK BELOW THIS LINE
+// ❗ DO NOT MODIFY THE CODE BELOW
+// ❗ DO NOT MODIFY THE CODE BELOW
+// ❗ DO NOT MODIFY THE CODE BELOW
 if (typeof module !== 'undefined' && module.exports) module.exports = { moduleProject2 }
 else moduleProject2()
