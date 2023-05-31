@@ -100,7 +100,7 @@ Use a `console.log` if you have any doubts about what kind of value a particular
 
 You will have noticed by playing with the mock that clicking on the highlighted square has no effect, and clicking on a non-highlighted square removes the highlighting from the old square and applies it to the new one.
 
-The highlighting is controlled by an extra class name on `div.square`. When clicking on a new target, the class name must be removed from the old target, or from _all_ squares for a more "brute-force" approach, and added to the clicked square.
+The highlighting is controlled by an extra class name on `div.square`. When clicking on a new square, the class name must be removed from the old square, or from _all_ squares for a more "brute-force" approach, and added to the clicked square.
 
 You will find the event listener function already scaffolded in its proper place; all you have to do is implement it!
 
@@ -123,7 +123,7 @@ Once again, the event listener function is already scaffolded. It's up to you to
 
 1. You can find out which key was pressed by inspecting the event's `key` property and comparing it against the `keys` dictionary at the top of the script.
 
-1. You can determine which square is currently targeted by searching for the `div.square` element that contains the class name responsible for highlighting.
+1. You can determine which square is currently targeted by searching for the `div.square` element that [contains](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) the class name responsible for highlighting.
 
 1. To make your work easier, you should take advantage of the following properties of DOM elements:
 
@@ -131,18 +131,20 @@ Once again, the event listener function is already scaffolded. It's up to you to
    - `.parentElement` gives you the row containing a particular square element.
    - `.previousElementSibling` gives you the preceding square or row, if any.
    - `.nextElementSibling` gives you the following square or row, if any.
+   - `.nextElementSibling` gives you the following square or row, if any.
+   - `.firstChild` gives you the mosquito inside a square, if any.
 
 1. These properties can be chained together to easily traverse the DOM. For example: `square.parentElement.children[2].classList.add('a-cousin-of-square')`.
 
 1. Pseudo code for "up" (SPOILER ALERT ❗):
 
 ```js
-// If the key is the up key
-// The current square is the square with the class name that enables highlighting
-// If the parent row of the current square has a sibling row before it
-// Get the index `i` of the current square within its parent row
-// Remove the class name that enables highlighting from the current square
-// Apply the class name to the square within the parent row's previous sibling at index `i`
+// If the key is the up key:
+//   The current square is the square with the class name that enables highlighting
+//   If the parent of the current square (row x) has a sibling element before it (row y):
+//     Get the index `i` of the current square within row x
+//     Remove the class name that enables highlighting from the current square
+//     Apply the class name to the square within row y at index `i`
 ```
 
   ---
@@ -160,7 +162,7 @@ You will have noticed by playing with the mock that the space bar is used to squ
 
 Note that hitting the space bar while on an empty square or on a square holding a dead mosquito has no effect.
 
-If the square contains a live mosquito, you must edit a **data attribute** on the mosquito to mark it as dead (inspect the DOM in the mock to see the data attribute on the mosquito).
+If the square contains a live mosquito, you must [edit a data attribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) on the mosquito to mark it as dead (inspect the DOM in the mock to see the data attribute on the mosquito).
 
 The data attribute is how you determine whether a given mosquito is dead or alive. Data attributes allow us to store string information inside DOM elements that is not meant to be rendered.
 
@@ -179,7 +181,7 @@ After marking the mosquito as dead, you must change the background color of the 
 
 Once the player exterminates all mosquitoes, there are some changes in the DOM that require additional logic within our "space bar" code.
 
-Whenever you squash a mosquito, use `querySelectorAll` to find out how many _live_ mosquitoes remain. Game over is determined by all mosquitoes being dead as per their data-attribute.
+Whenever you squash a mosquito, use `querySelectorAll` to find out how many _live_ mosquitoes remain. Game over is determined by all mosquitoes being dead as per their data attribute. You can elements select by their data attribute [using an attribute selector](https://css-tricks.com/almanac/selectors/a/attribute/).
 
 One change you need to implement on game's end is that the text of `p.info` is updated to `Extermination completed in <time elapsed> seconds!`. You can use the helper function at the top of the script to determine the time elapsed since the script was loaded.
 
@@ -189,7 +191,7 @@ If you are unsure about how to force a browser window reload using JavaScript, y
 
 For extra practice, instead of reloading the browser, you can utilize your DOM manipulation skills to reset the DOM and reposition the mosquitoes.
 
-It would be a nice touch to move the focus of the window to the Restart button upon Game Over, for easier restarting.
+It would be a nice touch to move the focus of the window to the Restart button upon Game Over, for easier restarting, but this is optional.
 
   ---
 
