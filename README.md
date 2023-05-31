@@ -35,11 +35,11 @@ Make sure to carefully read and follow their instructions. Good luck!
 
 This is a **full-stack web application** that comprises both back-end and front-end components. If deployed to production, the back-end part would run in the cloud, while the front-end would execute inside the user's web browser (like Chrome for Android or Firefox for desktop).
 
-As a front-end engineer, your focus is mainly on the files that load **on the user's device**. In this particular case, these files live inside the `frontend` folder. The `backend` folder contains a web server built in Node, but the project as a whole is managed as a Node application. As such, it contains a `package.json` file at the root, containing some meta-information like name and version, and a few useful scripts developers can use as they work on the app, like "npm test".
+As a front-end engineer, your focus is mainly on the files that load **on the user's device**. In this particular case, these files live inside the `frontend` folder. The `backend` folder contains a web server built in Node, but the project as a whole is managed as a Node application. As such, it contains a `package.json` file at the root, containing some meta-information like project name and version, and a few scripts developers can use, like "npm start".
 
 1. You will **clone this repository** to your computer, which will allow you to run the software locally for development purposes.
 
-1. You will navigate your terminal to the project folder **and execute `npm install`**. This will install the libraries declared inside `package.json`. Some of these packages are needed for the back-end to do its job of serving front-end assets. Other libraries help with things like testing and linting your code.
+1. You will navigate your terminal to the project folder **and execute `npm install`**. This will install the libraries declared inside `package.json`. Some of these packages are needed for the back-end to do its job of serving front-end assets. Other libraries help with things like linting your code.
 
 1. After successful installation, you will run `npm start` in your terminal. On successful start, you will load the app in Chrome by **navigating the browser to `http://localhost:3003`**. The term "localhost" means "your machine," and the number is called a port, allowing multiple web servers to run on the same computer, with one server per port.
 
@@ -53,13 +53,13 @@ Hey! Let's make sure you're up to speed with your **action items so far**.
 
 - [x] The app is installed on your machine, with the `start` script running in a terminal.
 - [x] You studied the working [mock](https://bloominstituteoftechnology.github.io/W_U2_S5M2_module_project/).
-- [x] You loaded your app in `http://localhost:3003`.
+- [x] You loaded the app in Chrome at `http://localhost:3003`.
 
 Awesome! If you look inside the `frontend` folder you will see it contains, among other assets, an `index.js` script, which is loaded inside `index.html`.
 
 Let's discuss `index.js` and the tasks you need to complete inside that script. **You are not allowed to modify any other files.**
 
-Have fun, and check out the Solution Video for this project if you get too stuck!
+Have fun, and reach out to Staff if you get too stuck!
 
 #### 👉 TASK 1 - Understand the existing code
 
@@ -198,13 +198,6 @@ It would be a nice touch to move the focus of the window to the Restart button u
 ## FAQ
 
 <details>
-  <summary>I feel very stuck. What can I do?</summary>
-
-Check out the Solution Video for this project in your learning platform. In it, an industry expert will walk you through their thinking in detail while they solve the tasks. The Solution Videos are highly recommended even if you are not stuck: you will learn lots of tricks.
-
-</details>
-
-<details>
   <summary>Are there automated tests in this project?</summary>
 
 No. All testing will be manual testing, performed by the developer - you! Make sure the app behaves just like the mock. In a real team, the QA specialist or the Product Designer will easily spot the differences between the design and the implementation.
@@ -278,21 +271,6 @@ This way we can easily import your code as a single function should we want to r
   <summary>What are the package.json and package-lock.json files?</summary>
 
 The `package.json` file contains meta-information about the project like its version number, scripts that the developer can execute, and a list of the dependencies that are downloaded when you execute `npm install`. There can be some wiggle room to allow newer versions of the dependencies to be installed, so the `package-lock.json` file, when present, makes sure the exact same versions of everything are used every time the project is installed from scratch.
-
-</details>
-
-<details>
-  <summary>What is the "start" script in the package.json doing? It looks confusing.</summary>
-
-Give ChatGPT the following input for a detailed breakdown:
-
-```txt
-Hello, I'm looking at a JavaScript project on GitHub, and inside the package.json file I am seeing the following "script":
-
-"start": "fkill :3003 -s && node ./backend/server.js"
-
-Can you explain in detail, but with simple terms, to an audience of inexperienced web developers, what the "start" script is doing?
-```
 
 </details>
 
