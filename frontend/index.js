@@ -37,9 +37,6 @@ function moduleProject2() {
       row.appendChild(square)
       square.addEventListener('click', () => {
         // 👉 TASK 2 - Use a click handler to target a square 👈
-        console.log("clicked")
-        getAllSquares().forEach(e => e.classList.remove("targeted"))
-        square.classList.add("targeted")
       })
     }
   }
@@ -67,55 +64,11 @@ function moduleProject2() {
   })
 
   document.addEventListener('keydown', evt => {
-    // 👉 TASK 3 - Use the arrow keys to highlight a new square 
-    const oldSquare = document.getElementsByClassName("targeted").item(0)
-    let index;
-    let newSquare;
-    switch (evt.key) {
-      case keys.up:
-        if (!oldSquare.parentElement.previousElementSibling) return;
-        index = Array.from(oldSquare.parentElement.children).indexOf(oldSquare)
-        newSquare = oldSquare.parentElement.previousElementSibling.children[index]
-        newSquare.classList.add("targeted")
-        oldSquare.classList.remove("targeted")
-        break;
-      case keys.down:
-        if (!oldSquare.parentElement.nextElementSibling) return;
-        index = Array.from(oldSquare.parentElement.children).indexOf(oldSquare)
-        newSquare = oldSquare.parentElement.nextElementSibling.children[index]
-        newSquare.classList.add("targeted")
-        oldSquare.classList.remove("targeted")
-        break;
-      case keys.left:
-        if (!oldSquare.previousElementSibling) return;
-        newSquare = oldSquare.previousElementSibling
-        newSquare.classList.add("targeted")
-        oldSquare.classList.remove("targeted")
-        break;
-      case keys.right:
-        if (!oldSquare.nextElementSibling) return;
-        newSquare = oldSquare.nextElementSibling
-        newSquare.classList.add("targeted")
-        oldSquare.classList.remove("targeted")
-        break;
-      case keys.space:
-        console.log("space")
-        const img = oldSquare.children.item(0)
-        if (!img) return;
-        if (img.getAttribute("data-status") == "alive") {
-          img.setAttribute("data-status", "dead")
-          oldSquare.setAttribute("style", "background-color: red")
-          
-        }
-    }
+    // 👉 TASK 3 - Use the arrow keys to highlight a new square 👈
 
     // 👉 TASK 4 - Use the space bar to exterminate a mosquito 👈
 
     // 👉 TASK 5 - End the game 👈
-    if (document.querySelectorAll('[data-status="alive"]').length == 0) {
-      document.querySelector(".info").innerText = `Extermination completed in ${getTimeElapsed()/1000} seconds!`
-    }
-
   })
   // 👆 WORK WORK ABOVE THIS LINE 👆
 }
