@@ -1,6 +1,4 @@
 // 👉 TASK 1 - Understand the existing code 👈
-// 👉 TASK 1 - Understand the existing code 👈
-// 👉 TASK 1 - Understand the existing code 👈
 function moduleProject2() {
   // 👇 WORK WORK BELOW THIS LINE 👇
   let startTime = new Date().getTime() // Record start time
