@@ -25,41 +25,35 @@ In addition to these technical skills, the following soft skills will significan
 
 You have received a take-home coding assessment for a Web Developer position as part of the hiring process. Your task is to complete a game using only JavaScript.
 
-To help you complete the task, two of your future team members will provide you with instructions and advice. You can find a [fully-functional mock](https://bloominstituteoftechnology.github.io/W_U2_S5M2_module_project/) showing the desired end result.
+You can find a [fully-functional mock](https://bloominstituteoftechnology.github.io/W_U2_S5M2_module_project/) showing the desired end result.
 
-Make sure to read and follow their instructions carefully. Good luck!
+Good luck!
 
-### 💾 DevOps Engineer
+### 💾 Setup
 
-**Below, a DevOps Engineer will help you set up your local environment and launch the project:**
+**Here are the steps to set up this project:**
 
-This project is a **full-stack web application** that comprises both back-end and front-end components. If deployed to production, the back-end part would run in the cloud, while the front-end would execute inside the user's web browser (like Chrome for Android or Firefox for desktop).
+1. **Clone this repository** to your computer, allowing you to run the software locally for development purposes.
 
-As a front-end engineer, your focus is mainly on the files that load **on the user's device**. These files live inside the `frontend` folder in this case. The `backend` folder contains a web server built in Node, but the project as a whole is managed as a Node application. As such, it includes a `package.json` file at the root, containing some meta-information like project name and version and a few scripts developers can use, like "npm start".
+1. Within your terminal, navigate to the project folder **and execute `npm install`**.
 
-1. You will **clone this repository** to your computer, allowing you to run the software locally for development purposes.
+1. After successful installation **execute `npm start`** in your terminal.
 
-1. You will navigate your terminal to the project folder **and execute `npm install`**. This command will install the libraries declared inside `package.json`. Some of these packages are needed for the back-end to do its job of serving front-end assets. Other libraries help with things like linting your code.
+1. You will load the app in Chrome by **navigating the browser to `http://localhost:3003`**.
 
-1. After successful installation, you will run `npm start` in your terminal. On successful start, you will load the app in Chrome by **navigating the browser to `http://localhost:3003`**. The term "localhost" means "your machine," and the number is the port. Your machine has many ports allowing multiple web servers to run on the same computer, with one server per port.
+1. If you haven't already, install the [Eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) for VSCode.
 
-1. If you haven't already, install the [Eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) for VSCode. It will highlight syntax errors and problems in your editor, saving tons of time.
+### 🥷 Tasks
 
-### 🥷 Lead Developer
+**Here are guidelines for completing your tasks:**
 
-**Below, your Team Lead will discuss the tasks you need to complete.**
+- If you look inside the `frontend` folder you will notice it contains, among other assets, an `index.js` file. If you inspect the head element of the `index.html` document, you will find the script being loaded there.
 
-Hey! Let's make sure you're up to speed with your **action items so far**.
+- You will complete your tasks inside the `frontend/index.js` file. Do not modify any other files. Detailed instructions for each task can be found below.
 
-- [x] The app is installed on your machine, with the `start` script running in a terminal.
-- [x] You studied the working [mock](https://bloominstituteoftechnology.github.io/W_U2_S5M2_module_project/).
-- [x] You loaded the app in Chrome at `http://localhost:3003`.
+- As you make progress, the behavior of the game will start matching that of the [mock](https://bloominstituteoftechnology.github.io/W_U2_S5M2_module_project/).
 
-Awesome! If you look inside the `frontend` folder you will see it contains, among other assets, an `index.js` script, which is loaded inside `index.html`.
-
-Let's discuss `index.js` and the tasks you need to complete inside that script. **You are not allowed to modify any other files.**
-
-Have fun, and reach out to learner assistants if you get too stuck!
+- Have fun, and check out the Solution Video for this project if you need help!
 
 #### 👉 TASK 1 - Understand the existing code
 
