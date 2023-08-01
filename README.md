@@ -98,7 +98,7 @@ Use a `console.log` if you have any doubts about a particular variable's value. 
 
   ---
 
-Your game should respond when a user clicks on a square. Clicking on a non-highlighted square should remove the highlighting from the old square and apply it to the new one. Clicking on the highlighted square has no effect. 
+Your game should respond when a user clicks on a square. Clicking on a non-highlighted square should remove the highlighting from the old square and apply it to the new one. Clicking on the highlighted square has no effect.
 
 The game highlights the square with an extra class name (you can find the new class name in your code or by inspecting the mock). When clicking on a new square, the old square must have its class name removed (or from _all_ squares for a more "brute-force" approach) and added to the clicked square.
 
@@ -159,7 +159,7 @@ Now that you can select a square, it's time to code the space bar to squash a ta
 
 Note that hitting the space bar while on an empty square or a square holding a dead mosquito has no effect.
 
-If the square contains a live mosquito, you must [edit a data attribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) on the mosquito to mark it as dead (inspect the DOM in the mock to see the data attribute on the mosquito). The data attribute determines whether a given mosquito is dead or alive. 
+If the square contains a live mosquito, you must [edit a data attribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) on the mosquito to mark it as dead (inspect the DOM in the mock to see the data attribute on the mosquito). The data attribute determines whether a given mosquito is dead or alive.
 
 After marking the mosquito as dead, you must change the background color of the square to red using an inline style. Once the background is red, it remains red.
 
@@ -235,8 +235,6 @@ This part of the product is a Single Page Application, so the HTML is mostly emp
 Save your changes and reload the site in Chrome. If your code has a syntax problem, the app will print error messages in the console. Focus on the first message. Place console logs right before the crash site (errors usually inform of the line number where the problem originates) and see if your variables contain the data you think they do.
 
 Suppose there are no errors, but the page is not doing what it should. In that case, the debugging technique is similar: put console logs to ensure that the code you are working on is executing and check that all variables in the area hold the correct data.
-
-
 
 </details>
 
